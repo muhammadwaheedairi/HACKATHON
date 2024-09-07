@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Interactive Resume</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="resume-container">
+    <header>
+      <div class="personal-info">
+        <img src="./image/waheed.jpg" alt="Profile Picture" class="profile-pic">
+        <div>
+          <h1>Muhammad Waheed</h1>
+          <p class="job-title">Front-end Developer</p>
+          <p class="contact-info">03180297567 | m128waheed@gmail.com</p>
+          
+        </div>
+      </div>
+    </header>
+
+    <hr>
+
+    <section class="education-section">
+      <h2>Education</h2>
+      <div class="education-details">
+        <p><strong>Diploma in Computer Information Technology</strong></p>
+        <p>Sindh Board of Technical Education, 2023</p>
+      </div>
+    </section>
+
+    <section class="experience-section">
+      <h2>Work Experience</h2>
+      <div class="experience-details">
+        <p><strong>Junior Web Developer</strong> - At GIAIC (2024 - Present)</p>
+        <ul>
+          <li>Developed responsive front-end components using HTML, CSS, and TypeScript.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="skills-section hidden" id="skills-section">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>TypeScript</li>
+        <li>React.js</li>
+        <li>Git, GitHub</li>
+        <li>Next.js</li>
+      </ul>
+    </section>
+
+    <div class="toggle-container">
+      <button id="toggleSkillsBtn" class="toggle-btn">Show Skills</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
