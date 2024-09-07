@@ -8,6 +8,3 @@ A dynamic resume builder using **HTML**, **CSS**, and **TypeScript**. Create, ed
 - Unique shareable URL for each resume
 - PDF download option
 
-## Live Demo
-[Live on Vercel](https://your-username.vercel.app)
-
