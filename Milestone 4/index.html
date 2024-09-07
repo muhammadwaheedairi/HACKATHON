@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dynamic Resume Builder</h1>
+    
+    <!-- User Input Form -->
+    <form id="resumeForm">
+      <h2>Personal Information</h2>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="contact">Contact Info:</label>
+      <input type="text" id="contact" placeholder="Enter your contact details" required>
+
+      <label for="education">Education:</label>
+      <input type="text" id="education" placeholder="Enter your education" required>
+
+      <label for="work">Work Experience:</label>
+      <textarea id="work" placeholder="Describe your work experience" required></textarea>
+
+      <label for="skills">Skills:</label>
+      <textarea id="skills" placeholder="Enter your skills (comma-separated)" required></textarea>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <hr>
+
+    <!-- Dynamically Generated Resume -->
+    <div id="resume">
+      <header>
+        <h2 id="displayName" contenteditable="true">[Full Name]</h2>
+        <p id="displayContact" contenteditable="true">[Contact Info]</p>
+      </header>
+      
+      <section>
+        <h3>Education</h3>
+        <p id="displayEducation" contenteditable="true">[Education]</p>
+      </section>
+
+      <section>
+        <h3>Work Experience</h3>
+        <p id="displayWork" contenteditable="true">[Work Experience]</p>
+      </section>
+
+      <section id="skills-section">
+        <h3>Skills</h3>
+        <ul id="displaySkills" contenteditable="true"></ul>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
