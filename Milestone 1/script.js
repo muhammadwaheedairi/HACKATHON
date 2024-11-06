@@ -1,13 +1,10 @@
-var toggleSkillsBtn = document.getElementById('toggleSkillsBtn');
-var skillsSection = document.getElementById('skills-section');
-toggleSkillsBtn.addEventListener('click', function () {
-    var isHidden = skillsSection.classList.contains('hidden');
-    if (isHidden) {
-        skillsSection.classList.remove('hidden');
-        toggleSkillsBtn.textContent = "Hide Skills";
-    }
-    else {
-        skillsSection.classList.add('hidden');
-        toggleSkillsBtn.textContent = "Show Skills";
-    }
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleButton = document.getElementById('toggle-skills');
+    var skillsList = document.getElementById('skills-list');
+    var skillsVisible = true;
+    toggleButton.addEventListener('click', function () {
+        skillsVisible = !skillsVisible;
+        skillsList.style.display = skillsVisible ? 'grid' : 'none';
+        toggleButton.textContent = skillsVisible ? 'Hide Skills' : 'Show Skills';
+    });
 });
