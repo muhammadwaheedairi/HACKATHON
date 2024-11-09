@@ -1,74 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Resume Builder</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Form to collect resume data -->
-        <section id="form-section">
-            <h2>Enter Your Details</h2>
-            <form id="resume-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+  <div class="container">
+    <h1>Dynamic Resume Builder</h1>
+    
+    <!-- User Input Form -->
+    <form id="resumeForm">
+      <h2>Personal Information</h2>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
 
-                <label for="title">Job Title:</label>
-                <input type="text" id="title" name="title" required>
+      <label for="contact">Contact Info:</label>
+      <input type="text" id="contact" placeholder="Enter your contact details" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+      <label for="education">Education:</label>
+      <input type="text" id="education" placeholder="Enter your education" required>
 
-                <label for="location">Location:</label>
-                <input type="text" id="location" name="location" required>
+      <label for="work">Work Experience:</label>
+      <textarea id="work" placeholder="Describe your work experience" required></textarea>
 
-                <label for="summary">Professional Summary:</label>
-                <textarea id="summary" name="summary" required></textarea>
+      <label for="skills">Skills:</label>
+      <textarea id="skills" placeholder="Enter your skills (comma-separated)" required></textarea>
 
-                <label for="experience">Work Experience (comma-separated):</label>
-                <textarea id="experience" name="experience" required></textarea>
+      <button type="submit">Generate Resume</button>
+    </form>
 
-                <label for="education">Education (comma-separated):</label>
-                <textarea id="education" name="education" required></textarea>
+    <hr>
 
-                <label for="skills">Skills (comma-separated):</label>
-                <textarea id="skills" name="skills" required></textarea>
+    <!-- Dynamically Generated Resume -->
+    <div id="resume">
+      <header>
+        <h2 id="displayName">[Full Name]</h2>
+        <p id="displayContact">[Contact Info]</p>
+      </header>
+      
+      <section>
+        <h3>Education</h3>
+        <p id="displayEducation">[Education]</p>
+      </section>
 
-                <button type="submit">Generate Resume</button>
-            </form>
-        </section>
+      <section>
+        <h3>Work Experience</h3>
+        <p id="displayWork">[Work Experience]</p>
+      </section>
 
-        <!-- The Resume Output Section -->
-        <section id="resume-section" style="display: none;">
-            <header>
-                <h1 id="resume-name"></h1>
-                <p id="resume-title"></p>
-            </header>
-            <section id="contact">
-                <h2>Contact Information</h2>
-                <p id="resume-email"></p>
-                <p id="resume-location"></p>
-            </section>
-            <section id="summary">
-                <h2>Professional Summary</h2>
-                <p id="resume-summary"></p>
-            </section>
-            <section id="experience">
-                <h2>Work Experience</h2>
-                <div id="resume-experience"></div>
-            </section>
-            <section id="education">
-                <h2>Education</h2>
-                <div id="resume-education"></div>
-            </section>
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul id="resume-skills"></ul>
-            </section>
-        </section>
+      <section id="skills-section">
+        <h3>Skills</h3>
+        <ul id="displaySkills"></ul>
+      </section>
     </div>
-    <script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
