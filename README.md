@@ -38,7 +38,7 @@ Contributions are welcome! Feel free to fork this repo, submit pull requests, or
 
 Let’s stay in touch! Reach me on:
 
-- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/muhammadwaheedaree/)
+- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/muhammadwaheedairi/)
 - **GitHub**: [Your GitHub](https://github.com/muhammadwaheedairi)
 
 ---
